@@ -1,9 +1,16 @@
 tasks:
   - name: "Install VSCode Extension - BROKEN"
     command: |
-        code --install-extension EditorConfig.EditorConfig
+      echo "This command is invoked before Code is launched, so it fails:"
+      code --install-extension EditorConfig.EditorConfig
 
   - name: "Install VSCode Extension - WORKS"
     command: |
+      echo "This command waits for a couple of seconds for Code to launch, and succeeds:"
       sleep 10                                              # Wait for VSCode to boot up
       code --install-extension dbaeumer.vscode-eslint
+
+  - name: "List VSCode Extensions - BROKEN"
+    command: |
+      echo "This command is also invoked before Code is launched, and again - it fails:"
+      code --list-extensions
