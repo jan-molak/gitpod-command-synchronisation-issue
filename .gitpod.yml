@@ -1,0 +1,9 @@
+tasks:
+  - name: "Install VSCode Extension - BROKEN"
+    command: |
+        code --install-extension EditorConfig.EditorConfig
+
+  - name: "Install VSCode Extension - WORKS"
+    command: |
+      sleep 10                                              # Wait for VSCode to boot up
+      code --install-extension dbaeumer.vscode-eslint
