@@ -93,4 +93,4 @@ gitpod /workspace/gitpod-command-synchronisation-issue (main) $
 
 ## Conclusion
 
-I believe that `task.command` does not wait for VSCode to launch, and might need to be synchronised to allow for custom extensions to be installed without having to introduce an artificial delay. 
+I believe that `task.command` does not wait for VSCode server to launch, and might need to be synchronised to allow for custom extensions to be installed without having to introduce an artificial delay. 
