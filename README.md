@@ -16,7 +16,7 @@ However, since the issue can be reproduced with both private and public extensio
 To install an extension, I followed the guidance in the [Gitpod.io manual](https://www.gitpod.io/docs/ides-and-editors/vscode-extensions#where-do-i-find-extensions)
 and [VSCode manual](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management) and concluded, that I need the following command:
 
-```mermaid
+```
 code --install-extension EditorConfig.EditorConfig
 ```
 
